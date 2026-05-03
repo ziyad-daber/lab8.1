@@ -1,0 +1,11 @@
+ID,Source,Élément,Preuve,Confiance,Sévérité,Impact,Recommandation,Référence OWASP,Statut
+FIND-001,Yaazhini,API Key exposée,res/values/strings.xml,Forte,High,Accès non autorisé aux services tiers,Utiliser Android Keystore,MASVS-STORAGE-1,Confirmé
+FIND-002,Yaazhini,Backup activé,AndroidManifest.xml:allowBackup,Forte,Medium,Extraction de données via ADB,Désactiver allowBackup,MASVS-STORAGE-4,Confirmé
+FIND-003,Yaazhini,Cleartext Traffic,AndroidManifest.xml:usesCleartextTraffic,Forte,Medium,Interception MITM,Forcer HTTPS,MASVS-NETWORK-1,Confirmé
+FIND-004,Yaazhini,Activité exposée,AndroidManifest.xml:.DebugActivity,Forte,Medium,Accès non autorisé au debug,Définir exported="false",MASVS-PLATFORM-1,Confirmé
+FIND-005,BeVigil+Yaazhini,Endpoint de debug exposé,bevigil_notes + NetworkClient.java,Forte,Medium,Exposition de l'infra interne,Supprimer les endpoints de debug en prod,MASVS-CODE-1,Confirmé
+FIND-006,BeVigil,Domaine de dev exposé,bevigil_notes:dev.lab-mobile-security.com,Moyenne,Low,Information sur l'environnement de dev,Restreindre l'accès aux domaines dev,MASVS-NETWORK-2,Confirmé
+FIND-007,BeVigil,Email administrateur,bevigil_notes:admin@lab-mobile-security.com,Forte,Low,Cible potentielle pour phishing,Masquer les emails dans le code,MASVS-CODE-2,Confirmé
+FIND-008,BeVigil,HTTP Endpoint,bevigil_notes:http://test-server.local/logs,Forte,Medium,Fuite de logs en clair,Utiliser HTTPS,MASVS-NETWORK-1,Confirmé
+FIND-009,Yaazhini,Permissions excessives,AndroidManifest.xml,Moyenne,Low,Surface d'attaque augmentée,Réduire les permissions,MASVS-PLATFORM-2,À confirmer
+FIND-010,BeVigil,Version SDK obsolète,bevigil_notes:Android SDK 33,Forte,Low,Vulnérabilités OS connues,Mettre à jour le targetSdkVersion,MASVS-PLATFORM-3,Confirmé

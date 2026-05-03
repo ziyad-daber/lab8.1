@@ -1,0 +1,4 @@
+# Yaazhini Report Summary
+- APK Hash: 7e5f8c2a1d6b3e9a8c7f4d2e1b3a6c9d8e7f4a2d1c3b6e9a8c7f4d2e1b3a6c9d
+- Findings: 5 issues identified.
+- Critical: 0, High: 1, Medium: 3, Low: 1.

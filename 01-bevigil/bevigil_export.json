@@ -1,0 +1,11 @@
+[
+  {
+    "project": "LAB-BEGINNER-20260503",
+    "assets": [
+      {"type": "domain", "value": "api.lab-mobile-security.com"},
+      {"type": "endpoint", "value": "/api/v1/debug"},
+      {"type": "email", "value": "admin@lab-mobile-security.com"}
+    ],
+    "technologies": ["Retrofit", "OkHttp"]
+  }
+]
